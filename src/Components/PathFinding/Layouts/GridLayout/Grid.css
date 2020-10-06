@@ -1,0 +1,114 @@
+.main-grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.grid {
+  /* border-radius: 7.5px; */
+  overflow: hidden;
+  /* border: 1px solid #000; */
+  border-collapse: collapse;
+  height: 100%;
+}
+.grid-row {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 5%;
+}
+.grid-cell {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+  transition: background-size 0.5s, color 1s;
+}
+.shortest-path-cell {
+  background-color: red !important;
+}
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.visited-cell {
+  background-image: linear-gradient(
+    45deg,
+    rgb(132, 205, 236) 30%,
+    rgb(71, 163, 202) 90%
+  );
+  background-size: 100% 100%;
+}
+.visited-bar {
+  /* background-color: cyan; */
+  background-image: linear-gradient(45deg, #7575f6 100%, #36383b 90%);
+  /* radial-gradient(rgb(2, 241, 241), rgb(255, 255, 255)); */
+  background-size: 100% 100%;
+}
+.going-to-realx-cell {
+  background-color: green;
+}
+
+.swaping-bar {
+  background-image: linear-gradient(45deg, #989a9c 30%, #36383b 90%);
+  /* radial-gradient(#000, rgb(77, 75, 75), rgb(156, 146, 146)); */
+  background-size: 100% 100%;
+}
+
+.block-cell {
+  background-image: linear-gradient(45deg, #9fa0a1 30%, #57595c 60%);
+  /* radial-gradient(#000, rgb(77, 75, 75), rgb(156, 146, 146)); */
+  background-size: 100% 100%;
+}
+
+.ordered-element {
+  background-image: linear-gradient(45deg, #f3f321 10%, #21f380 90%);
+  /* radial-gradient(#000, rgb(77, 75, 75), rgb(156, 146, 146)); */
+  background-size: 100% 100%;
+  animation-name: example;
+  animation-duration: 3s;
+}
+
+.path-cell {
+  background-image: linear-gradient(45deg, #a0f7c7 30%, #36ce7a 90%);
+  background-size: 100% 100%;
+  animation-name: example;
+  animation-duration: 3s;
+}
+
+.pivot {
+  background-image: linear-gradient(45deg, #ec9f05 50%, #ff4e00 90%);
+
+  /* radial-gradient(#000, rgb(77, 75, 75), rgb(156, 146, 146)); */
+  background-size: 100% 100%;
+  animation-name: example;
+  animation-duration: 3s;
+}
+.left-merge {
+  background-image: linear-gradient(45deg, #36ce7a 30%, #21cbf3 90%);
+
+  /* radial-gradient(#000, rgb(77, 75, 75), rgb(156, 146, 146)); */
+  background-size: 100% 100%;
+  animation-name: example;
+  animation-duration: 3s;
+}
+
+.rigth-merge {
+  background-image: linear-gradient(45deg, red 100%, #36ce7a 30%);
+
+  /* radial-gradient(#000, rgb(77, 75, 75), rgb(156, 146, 146)); */
+  background-size: 100% 100%;
+  animation-name: example;
+  animation-duration: 3s;
+}

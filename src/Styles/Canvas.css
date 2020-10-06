@@ -1,0 +1,86 @@
+.canvas {
+  /* border: 1px solid #9d9d9d; */
+  border-radius: 3px;
+  /* padding: 0 5px 0 5px; */
+  background-color: white;
+
+  position: relative;
+  /* padding: 0 5px; */
+  width: 100%;
+  /* margin-left: 15.5vw;
+  margin-top: 10vh; */
+  /* height: calc(100% - 60px); */
+  height: 100%;
+  /* transform: scaleY(-1); */
+  z-index: 7999;
+}
+
+.canvas-info-container {
+  width: 70%;
+}
+
+.canvas-info {
+  display: flex;
+  padding: 10px;
+  padding-top: 50px;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.col-blue {
+  background: linear-gradient(to right, #9d8dc7, #ab9cd1, #9d8dc7);
+  color: #fff !important;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.Canv {
+  border-radius: 6px;
+  padding: 0 5px 0 5px;
+  background-color: white;
+  border: 0.5px solid black;
+  box-shadow: 0 5px 20px 0 rgba(32, 48, 60, 0.11);
+  position: relative;
+  padding: 0 5px;
+  width: 100%;
+  /* margin-left: 15.5vw;
+  margin-top: 10vh; */
+  height: 100%;
+  transform: scaleY(-1);
+}
+
+.decorated {
+  padding: 10px 15px;
+  background: rgb(226, 220, 243);
+  border-radius: 20px;
+}
+
+.grid {
+  height: 100%;
+  width: 100%;
+}
+
+.block {
+  position: absolute;
+  height: calc(100vh - 70px);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+
+  z-index: 7999;
+}
+
+.done-button {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 0 20px;
+  height: 70%;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(5, 70, 121, 0.2);
+}
