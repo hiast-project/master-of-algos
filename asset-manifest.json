@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/master-of-algos/static/css/main.d1720da6.chunk.css",
+    "main.js": "/master-of-algos/static/js/main.c44e79a5.chunk.js",
+    "main.js.map": "/master-of-algos/static/js/main.c44e79a5.chunk.js.map",
+    "runtime-main.js": "/master-of-algos/static/js/runtime-main.f62bd7d8.js",
+    "runtime-main.js.map": "/master-of-algos/static/js/runtime-main.f62bd7d8.js.map",
+    "static/js/2.1d908428.chunk.js": "/master-of-algos/static/js/2.1d908428.chunk.js",
+    "static/js/2.1d908428.chunk.js.map": "/master-of-algos/static/js/2.1d908428.chunk.js.map",
+    "index.html": "/master-of-algos/index.html",
+    "precache-manifest.ec9257182e82e513e2e385fb7a73ff2f.js": "/master-of-algos/precache-manifest.ec9257182e82e513e2e385fb7a73ff2f.js",
+    "service-worker.js": "/master-of-algos/service-worker.js",
+    "static/css/main.d1720da6.chunk.css.map": "/master-of-algos/static/css/main.d1720da6.chunk.css.map",
+    "static/js/2.1d908428.chunk.js.LICENSE.txt": "/master-of-algos/static/js/2.1d908428.chunk.js.LICENSE.txt",
+    "static/media/graphIcon.png": "/master-of-algos/static/media/graphIcon.d23b1831.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f62bd7d8.js",
+    "static/js/2.1d908428.chunk.js",
+    "static/css/main.d1720da6.chunk.css",
+    "static/js/main.c44e79a5.chunk.js"
+  ]
+}
