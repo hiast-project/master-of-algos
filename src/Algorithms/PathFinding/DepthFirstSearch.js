@@ -4,32 +4,31 @@ import Graph from "../../Models/Graph";
 const graphInstance = Graph();
 
 function DepthFirstSearch() {
-  const stateTrace = React.createRef();
-  stateTrace.current = [];
-
-  function dfsRec(graph, src, dest, events) {
-    let destFound = false;
-    graph[src].isVisited = true;
-    stateTrace.current.push(graphInstance.copyGraph(graph));
-    let adjs = graph[src].adjecentNodes;
-    for (let i = 0; i < adjs.length; i++) {
-      let node = adjs[i].adjecentNode;
-      if (graph[node].isBlock === true) continue;
-      if (graph[node].isVisited === false) {
-        graph[node].parent = graph[src];
-        if (node === dest) {
-          graph[node].isVisited = true;
-          return (destFound = true);
-        }
-        destFound = dfsRec(graph, node, dest, events);
-      }
-      if (destFound === true) break;
-    }
-
-    return destFound;
-  }
-
   function findPath(grf, src, dest, events) {
+    const stateTrace = React.createRef();
+    stateTrace.current = [];
+
+    function dfsRec(graph, src, dest, events) {
+      let destFound = false;
+      graph[src].isVisited = true;
+      stateTrace.current.push(graphInstance.copyGraph(graph));
+      let adjs = graph[src].adjecentNodes;
+      for (let i = 0; i < adjs.length; i++) {
+        let node = adjs[i].adjecentNode;
+        if (graph[node].isBlock === true) continue;
+        if (graph[node].isVisited === false) {
+          graph[node].parent = graph[src];
+          if (node === dest) {
+            graph[node].isVisited = true;
+            return (destFound = true);
+          }
+          destFound = dfsRec(graph, node, dest, events);
+        }
+        if (destFound === true) break;
+      }
+
+      return destFound;
+    }
     let path = [];
     let graph = graphInstance.copyGraph(grf);
 

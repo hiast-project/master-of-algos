@@ -34,6 +34,7 @@
 .shortest-path-cell {
   background-color: red !important;
 }
+
 @keyframes example {
   from {
     opacity: 0;
@@ -95,8 +96,16 @@
   animation-name: example;
   animation-duration: 3s;
 }
+.quick-indecies {
+  background-image: linear-gradient(45deg, rgb(241, 241, 57) 100%, #ff4e00 90%);
+
+  /* radial-gradient(#000, rgb(77, 75, 75), rgb(156, 146, 146)); */
+  background-size: 100% 100%;
+  animation-name: example;
+  animation-duration: 3s;
+}
 .left-merge {
-  background-image: linear-gradient(45deg, #36ce7a 30%, #21cbf3 90%);
+  background-image: linear-gradient(45deg, #ec9f05 30%, #ec9f05 90%);
 
   /* radial-gradient(#000, rgb(77, 75, 75), rgb(156, 146, 146)); */
   background-size: 100% 100%;
