@@ -520,17 +520,6 @@ function App() {
             ) : (
               ""
             )}
-
-            {/* <div className="consol-content centered">
-                <div className="consol-line">
-                  <span className="empty-info">
-                    Select an algorithm and a layout
-                  </span>
-                </div>
-                <div className="consol-line">
-                  <span className="empty-info">Then run the algorithm</span>
-                </div>
-              </div> */}
           </div>
         </div>
         <div className="col-sm-12 consol-log-container">
