@@ -286,7 +286,7 @@ function App() {
                       name: "Quick Sort  ",
                       description:
                         "Quick Sort is based on the concept of Divide and Conquer. In quick sort all the heavy lifting(major work) is done while dividing the array into subarrays. In case of quick sort, the combine step does absolutely nothing.",
-                      complexity: "O(N*Log(N)",
+                      complexity: "O(N^(2))",
                     });
                   }}
                 >
@@ -520,6 +520,17 @@ function App() {
             ) : (
               ""
             )}
+
+            {/* <div className="consol-content centered">
+                <div className="consol-line">
+                  <span className="empty-info">
+                    Select an algorithm and a layout
+                  </span>
+                </div>
+                <div className="consol-line">
+                  <span className="empty-info">Then run the algorithm</span>
+                </div>
+              </div> */}
           </div>
         </div>
         <div className="col-sm-12 consol-log-container">
