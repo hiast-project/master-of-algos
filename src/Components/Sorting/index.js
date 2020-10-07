@@ -445,16 +445,23 @@ function App() {
                   <div className="circle visited-bar"></div>
                   <span className="console-line-content">Initial state</span>
                 </div>
-                <div className="consol-line">
-                  <div className="circle ordered-element"></div>
-                  <span className="console-line-content">Ordered element</span>
-                </div>
 
                 {selectedAlgortrithm == algorithms.bubbleSort ||
                 selectedAlgortrithm == algorithms.quickSort ? (
                   <div className="consol-line">
                     <div className="circle swaping-bar"></div>
                     <span className="console-line-content">Swaping bars</span>
+                  </div>
+                ) : (
+                  ""
+                )}
+                {selectedAlgortrithm == algorithms.bubbleSort ||
+                selectedAlgortrithm == algorithms.quickSort ? (
+                  <div className="consol-line">
+                    <div className="circle ordered-element"></div>
+                    <span className="console-line-content">
+                      Ordered element
+                    </span>
                   </div>
                 ) : (
                   ""
@@ -483,7 +490,7 @@ function App() {
                   <div className="consol-line">
                     <div className="circle quick-indecies"></div>
                     <span className="console-line-content">
-                      Left an rigth indecies
+                      Left and rigth indecies
                     </span>
                   </div>
                 ) : (
